@@ -1,4 +1,4 @@
-* Modulo L298N Primeiros Passos (v1.0)
+* Modulo L298N Primeiros Passos (v1.0) // atualização e adaptação para os outros pinos 
 * 
 * Rampa de aceleracao e desaceleracao de dois motores utilizando o driver L298N.
 * Os motores irao acelerar de 0 rpm ate a sua rotacao maxima e entao reduzir a 
@@ -15,14 +15,14 @@
 *******************************************************************************/
 
 //declaracao dos pinos utilizados para controlar a velocidade de rotacao
-const int PINO_ENA = 6; 
-const int PINO_ENB = 5;
+const int PINO_ENA = 13; 
+const int PINO_ENB = 8;
 
 //declaracao dos pinos utilizados para controlar o sentido do motor
-const int PINO_IN1 = 4; 
-const int PINO_IN2 = 3;
-const int PINO_IN3 = 8;
-const int PINO_IN4 = 7;
+const int PINO_IN1 = 12; 
+const int PINO_IN2 = 11;
+const int PINO_IN3 = 10;
+const int PINO_IN4 = 9;
 
 int i = 0; //declaracao da variavel para as rampas
 
