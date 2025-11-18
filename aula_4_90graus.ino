@@ -8,14 +8,14 @@ int IN3 = 10;
 int IN4 = 9;
 int ENB = 8;
 
-int tempo_90 = 290;
+int tempo_90 = 460;
 
 // uma função tem q ser feita antes dos compiladores(setup e loop), para dar tempo de ser chamada, lida e entendida pelo sistema(C++/arduino)
 // essa foi função feita para ajustar a velocidade dos motores, no caso ir para frente, para ir para trás é só ajustar a direção do giro
 void frente() {
   analogWrite(ENA, 255); // velocidade máxima
   analogWrite(ENB, 255); // velocidade máxima
-  delay(100); // tempo que os motores tem q girar na velocidade máxima
+  delay(3000); // tempo que os motores tem q girar na velocidade máxima
   zerar(); // função criada depois para zerar os motores, pq se não eles ficam girando enquanto tiver o delay
 }
 
